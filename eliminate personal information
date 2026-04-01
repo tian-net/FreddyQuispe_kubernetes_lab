@@ -36,7 +36,7 @@ Durante el despliegue en el entorno de AWS EC2, se identificaron y resolvieron l
 
 
 > [!TIP]
-> **Problema 2: Acceso externo desde el navegador (Cañete, Perú)**
+> **Problema 2: Acceso externo desde el navegador **
 > * **Contexto:** La aplicación no era accesible fuera de la instancia EC2 usando la IP pública de AWS.
 > * **Solución:** >   1. Se configuró el **Security Group** de la instancia en la consola de AWS para permitir tráfico TCP en el puerto **30007**.
 >   2. Se ejecutó `kubectl port-forward --address 0.0.0.0 service/mi-servicio 30007:80` para mapear el tráfico de la red pública hacia el servicio interno de Kubernetes.
